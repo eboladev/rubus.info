@@ -81,6 +81,7 @@ body {
 
 a {
 	color: #000;
+	background-color: transparent;
 }
 
 a:hover {
@@ -127,10 +128,6 @@ a:hover {
 #mainnav ul * {
 	background-color: #999;
 	/*color: #FFF;*/
-}
-
-#mainnav li a {
-	background-color: transparent;
 }
 
 #mainnav li:hover, .rubus .rubus, .contact .contact {
