@@ -133,7 +133,7 @@ a:hover {
 	background-color: transparent;
 }
 
-#mainnav li:hover {
+#mainnav li:hover, .rubus .rubus, .contact .contact {
 	background-color: #CCC;
 }
 
