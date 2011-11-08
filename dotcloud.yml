@@ -5,3 +5,5 @@ www:
         - redcarpet
         - liquid
         - htmlentities
+    environment:
+        title: Rubus

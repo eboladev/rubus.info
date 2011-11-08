@@ -99,7 +99,7 @@ class Renderer
     breadcrumbs = BreadCrumbs.new(file)
     opts = {
             'breadcrumbs' => breadcrumbs,
-            'title'       => ''#@config['environment']['title'].value 
+            'title'       => @config['environment']['title'].value 
            }
     content = parse_liquid(content, opts)
     
