@@ -130,7 +130,7 @@ a:hover {
 	/*color: #FFF;*/
 }
 
-#mainnav li:hover, .rubus .rubus, .contact .contact {
+#mainnav li:hover, #mainnav li.current {
 	background-color: #CCC;
 }
 

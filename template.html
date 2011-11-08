@@ -12,13 +12,13 @@
 	<link href="https://plus.google.com/104823089512012142300/" rel="publisher">
 </head>
 
-<body class="{{ clean_title }}">
+<body>
 	<header>
 		<nav id="mainnav" class="clearfix">
 			<ul id="navbar">
-				<li class="rubus"><a href="/">Rubus</a></li>
-				<!--<li class="about"><a href="/about/">About</a></li>-->
-				<li class="contact"><a href="/contact/">Contact</a></li>
+				<li class="{% if clean_title == 'rubus' }current{% endif %}"><a href="/">Rubus</a></li>
+				<!--<li class="{% if clean_title == 'about' }current{% endif %}"><a href="/about/">About</a></li>-->
+				<li class="{% if clean_title == 'contact' }current{% endif %}"><a href="/contact/">Contact</a></li>
 			</ul>
 			<ul id="social">
 				<li><a href="https://plus.google.com/104823089512012142300/?prsrc=3"><img src="https://ssl.gstatic.com/images/icons/gplus-16.png" width="16" height="16" alt="Google+"></a></li>
