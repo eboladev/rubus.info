@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<!-- Root -->
+
+<url>
+  <loc>http://duckinator.net/</loc>
+</url>
+<url>
+  <loc>http://duckinator.net/contact</loc>
+</url>
+<url>
+  <loc>http://duckinator.net/resources</loc>
+</url>
+<url>
+  <loc>http://duckinator.net/sitemap</loc>
+</url>
+
+<!-- Dux -->
+
+<url>
+  <loc>http://duckinator.net/osinfo</loc>
+</url>
+<url>
+  <loc>http://duckinator.net/dux</loc>
+</url>
+<url>
+  <loc>http://duckinator.net/dux/metodo</loc>
+</url>
+<url>
+  <loc>http://duckinator.net/dux/api/</loc>
+</url>
+
+<!-- Dux API -->
+
+<url>
+  <loc>http://duckinator.net/dux/api/v0.1.0</loc>
+</url>
+<url>
+  <loc>http://duckinator.net/dux/api/v0.1.0/text</loc>
+</url>
+<url>
+  <loc>http://duckinator.net/dux/api/v0.1.0/console</loc>
+</url>
+<url>
+  <loc>http://duckinator.net/dux/api/v0.1.0/image</loc>
+</url>
+<url>
+  <loc>http://duckinator.net/dux/api/v0.1.0/display</loc>
+</url>
+<url>
+  <loc>http://duckinator.net/dux/api/v0.1.0/network</loc>
+</url>
+<url>
+  <loc>http://duckinator.net/dux/api/v0.1.0/vfs</loc>
+</url>
+<url>
+  <loc>http://duckinator.net/dux/api/v0.1.0/cpu</loc>
+</url>
+
+</urlset>

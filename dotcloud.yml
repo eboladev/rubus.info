@@ -1,0 +1,10 @@
+www:
+    approot: .
+    type: ruby
+    requirements:
+        - redcarpet
+        - liquid
+        - htmlentities
+    environment:
+        theme: 'fairview_pier'
+        title: 'duckinator.net'

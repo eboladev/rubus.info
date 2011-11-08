@@ -1,0 +1,66 @@
+{% capture pretitle %}
+	{% for breadcrumb in breadcrumbs %}{{ breadcrumb.name }} : {% endfor %}
+{% endcapture %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>{{ pretitle }}{{ title }}</title>
+	<!--<link rel="stylesheet" type="text/css" href="/css/main.css">-->
+	<link rel="stylesheet" type="text/css" href="/css/all.min.css">
+</head>
+
+<body>
+	<header class="clearfix">
+		<nav>
+			<!--<h1 id="breadcrumbs">
+				<a href="/">{{ title }}</a>
+				{% for breadcrumb in breadcrumbs %}
+				/
+				<a href="{{ breadcrumb.url }}">{{ breadcrumb.name }}</a>
+				{% endfor %}
+			</h1>-->
+			<ul id="navbar">
+				<li><a href="/">Rubus</a></li>
+				<!--<li><a href="/about/">About</a></li>-->
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="wrap" class="clearfix">
+		<article id="content">
+{{ content | markdown }}
+		</article>
+		<div id="right">
+			<h1 id="twitter_header"></h1>
+			<ul id="twitter">
+			</ul>
+		</div>
+	</div>
+
+	<footer>
+		<p>Copyright &copy; {{ "%Y" | date }} Nick Markwell.</p>
+		<div>
+			<a href="http://validator.w3.org/check?uri=referer">HTML5</a>
+			<span class="dot">&middot;</span>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">CSS3</a>
+			<span class="dot">&middot;</span>
+			<a href="http://github.com/duckinator/duckinator.net">Open Source</a>
+			<span class="dot">&middot;</span>
+			<a href="/sitemap">Sitemap</a>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/legacyfix.js"></script>
+	<script type="text/javascript" src="/js/mail.js"></script>
+	<script type="text/javascript" src="/js/rot.js"></script>
+	<script type="text/javascript" src="/js/jquery.sortElements.js"></script>
+	<script type="text/javascript" src="/js/jquery.tweets.0.3.js"></script>
+	<script type="text/javascript" src="/js/twitter.js"></script>
+	<script type="text/javascript" src="/js/github.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>
