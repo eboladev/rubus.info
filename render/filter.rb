@@ -21,4 +21,8 @@ module TextFilter
   def htmlencode(input)
     HTMLEntities.new.encode(input)
   end
+
+  def downcase(input)
+    input.downcase
+  end
 end

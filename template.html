@@ -1,4 +1,4 @@
-<!--{% capture clean_title %}{% for breadcrumb in breadcrumbs %}{{ breadcrumb.name }}_{% endfor %}{{ title }}{% endcapture %}-->
+<!--{% capture clean_title %}{% for breadcrumb in breadcrumbs %}{{ breadcrumb.name | downcase }}_{% endfor %}{{ title | downcase }}{% endcapture %}-->
 
 <!DOCTYPE html>
 <html>
