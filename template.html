@@ -1,31 +1,26 @@
-{% capture pretitle %}
-	{% for breadcrumb in breadcrumbs %}{{ breadcrumb.name }} : {% endfor %}
-{% endcapture %}
-
 <!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<title>{{ pretitle }}{{ title }}</title>
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<!--<link rel="stylesheet" type="text/css" href="/css/main.css">-->
+	<!--<link rel="stylesheet" type="text/css" href="public/css/main.css">--> <!-- STFU -->
 	<link rel="stylesheet" type="text/css" href="/css/all.min.css">
+	<link href="https://plus.google.com/104823089512012142300/" rel="publisher">
 </head>
 
 <body>
-	<header class="clearfix">
-		<nav>
-			<!--<h1 id="breadcrumbs">
-				<a href="/">{{ title }}</a>
-				{% for breadcrumb in breadcrumbs %}
-				/
-				<a href="{{ breadcrumb.url }}">{{ breadcrumb.name }}</a>
-				{% endfor %}
-			</h1>-->
+	<header>
+		<nav id="mainnav" class="clearfix">
 			<ul id="navbar">
 				<li><a href="/">Rubus</a></li>
 				<!--<li><a href="/about/">About</a></li>-->
 				<li><a href="/contact/">Contact</a></li>
+			</ul>
+			<ul id="social">
+				<li><a href="https://plus.google.com/104823089512012142300/?prsrc=3"><img src="https://ssl.gstatic.com/images/icons/gplus-16.png" width="16" height="16" alt="Google+"></a></li>
+				<li><a href="#"><img src="/images/twitter_blue.png" width="16" height="16" alt="Twitter"></a></li>
 			</ul>
 		</nav>
 	</header>
