@@ -71,7 +71,7 @@ h4, h5, h6 { font-size:1.1em; }
 /* theme.css */
 
 body {
-	background-color: #DDD;
+	background-color: #CCC;
 }
 
 * {
@@ -96,13 +96,15 @@ a:hover {
 	padding-left: 10px;
 	padding-right: 10px;
 
-	background-color: #333;
+	background-color: #5D5D5D;
 }
 
 #mainnav ul {
 	display: table;
 	margin: 2px;
 	padding: 2px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
 }
 
 #navbar {
@@ -118,13 +120,21 @@ a:hover {
 	margin-bottom: -3px;
 }
 
-#mainnav ul * {
-	background-color: #444;
-	color: #DDD;
+#mainnav li a {
+	padding: 5px;
 }
 
-#mainnav li:hover > a, #mainnav li:hover {
-	background-color: #555;
+#mainnav ul * {
+	background-color: #999;
+	/*color: #FFF;*/
+}
+
+#mainnav li a {
+	background-color: transparent;
+}
+
+#mainnav li:hover {
+	background-color: #CCC;
 }
 
 #mainnav ul ul {
@@ -132,81 +142,37 @@ a:hover {
 }
 
 #mainnav ul > li {
-	display: table-cell;
+	display: inline-block;
 	margin: 0px;
 	padding: 5px;
+	padding-bottom: 10px;
 	border-width: 1px;
+	border-bottom-width: 0px;
 }
 
-#mainnav ul > li:first-child {
-	border-left-width: 1px;
+#mainnav > #social > li {
+	padding-bottom: 5px;
+	margin-bottom: 5px;
 }
 
-#mainnav ul > li:last-child {
-	border-right-width: 1px;
-}
-
-#mainnav ul > li:first-child {
+#mainnav ul > li:first-child, #mainnav ul > li:first-child a {
 	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-bottomleft: 5px;
 	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
 }
 
-#mainnav ul > li:last-child {
-	-moz-border-radius-topright: 5px;
-	-moz-border-radius-bottomright: 5px;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-}
-
-#mainnav ul li > ul {
-	visibility: hidden;
-	position: absolute;
-	list-style: none;
-	margin-left: -14px;
-	margin-top: 5px;
-	padding: 10px;
-	opacity: 0;
-
-	border-width: 1px;
-	-webkit-border-radius: 0px 0px 5px 5px;
-	-moz-border-radius: 0px 0px 5px 5px;
-	-ms-border-radius: 0px 0px 5px 5px;
-	-o-border-radius: 0px 0px 5px 5px;
-	border-radius: 0px 0px 5px 5px;
-}
-
-#mainnav ul li:hover > ul {
-	padding: 0px;
-	visibility: visible;
-	opacity: 1;
-
-	-webkit-transition: opacity .25s linear 0s;
-	-moz-transition: opacity .25s linear 0s;
-	-ms-transition: opacity .25s linear 0s;
-	-o-transition: opacity .25s linear 0s;
-	transition: opacity .25s linear 0s;
-}
-
-#mainnav ul li > ul > li > a {
-	position: relative;
-	display: table-cell;
-	width: 100%;
-	margin: 0px;
-	padding: 4px;
-}
-
-#mainnav ul li > ul > li:last-child, #mainnav ul li > ul > li:last-child > a {
+#mainnav #social > li:first-child, #mainnav #social > li:first-child a {
 	-moz-border-radius-bottomleft: 5px;
-	-moz-border-radius-bottomright: 5px;
 	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
 }
 
-#mainnav ul li > ul > li {
-	margin: 0px;
-	padding: 5px;
+#mainnav ul > li:last-child, #mainnav ul > li:last-child a {
+	-moz-border-radius-topright: 5px;
+	border-top-right-radius: 5px;
+}
+
+#mainnav #social > li:last-child, #mainnav #social > li:last-child a {
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 #wrap {

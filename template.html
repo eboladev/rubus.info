@@ -1,3 +1,5 @@
+<!--{% capture clean_title %}{% for breadcrumb in breadcrumbs %}{{ breadcrumb.name }}_{% endfor %}{{ title }}{% endcapture %}-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,13 +12,13 @@
 	<link href="https://plus.google.com/104823089512012142300/" rel="publisher">
 </head>
 
-<body>
+<body class="{{ clean_title }}">
 	<header>
 		<nav id="mainnav" class="clearfix">
 			<ul id="navbar">
-				<li><a href="/">Rubus</a></li>
+				<li><a class="rubus" href="/">Rubus</a></li>
 				<!--<li><a href="/about/">About</a></li>-->
-				<li><a href="/contact/">Contact</a></li>
+				<li><a class="contact" href="/contact/">Contact</a></li>
 			</ul>
 			<ul id="social">
 				<li><a href="https://plus.google.com/104823089512012142300/?prsrc=3"><img src="https://ssl.gstatic.com/images/icons/gplus-16.png" width="16" height="16" alt="Google+"></a></li>
