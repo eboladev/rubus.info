@@ -125,17 +125,13 @@ a:hover {
 	padding: 5px;
 }
 
-#mainnav ul * {
+#mainnav ul li {
 	background-color: #999;
 	/*color: #FFF;*/
 }
 
 #mainnav li:hover, .rubus .rubus, .contact .contact {
 	background-color: #CCC;
-}
-
-#mainnav ul ul {
-	list-style: none;
 }
 
 #mainnav ul > li {
