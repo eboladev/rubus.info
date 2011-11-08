@@ -1,4 +1,5 @@
-<!--{% capture clean_title %}{% for breadcrumb in breadcrumbs %}{{ breadcrumb.name | downcase }}_{% endfor %}{{ title | downcase }}{% endcapture %}-->
+{% capture clean_title %}{% for breadcrumb in breadcrumbs %}{{ breadcrumb.name | downcase }}_{% endfor %}{{ title | downcase }}{% endcapture %}
+{% capture pretitle %}{% for breadcrumb in breadcrumbs %}{{ breadcrumb.name }} : {% endfor %}{% endcapture %}
 
 <!DOCTYPE html>
 <html>
@@ -17,8 +18,8 @@
 		<nav id="mainnav" class="clearfix">
 			<ul id="navbar">
 				<li class="{% if clean_title == 'rubus' %}current{% endif %}"><a href="/">Rubus</a></li>
-				<!--<li class="{% if clean_title == 'about' %}current{% endif %}"><a href="/about/">About</a></li>-->
-				<li class="{% if clean_title == 'contact' %}current{% endif %}"><a href="/contact/">Contact</a></li>
+				<!--<li class="{% if clean_title == 'about_rubus' %}current{% endif %}"><a href="/about/">About</a></li>-->
+				<li class="{% if clean_title == 'contact_rubus' %}current{% endif %}"><a href="/contact/">Contact</a></li>
 			</ul>
 			<ul id="social">
 				<li><a href="https://plus.google.com/104823089512012142300/?prsrc=3"><img src="https://ssl.gstatic.com/images/icons/gplus-16.png" width="16" height="16" alt="Google+"></a></li>
