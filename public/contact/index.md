@@ -1,4 +1,4 @@
-## Contact ##
+# Contact #
 
 We are on github and G+ only, for now:
 
