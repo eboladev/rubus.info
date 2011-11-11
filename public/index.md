@@ -6,7 +6,7 @@ Rubus is an attempt at creating easily acquired (and used, of course) cluster co
 
 Each _Rubus_ cluster will contain one _Drupelet_ which controls multiple _Bramble Boxes_.
 The _Drupelet_ is the cluster controller, and provides a web-based interface to the _Bramble Boxes_ using a mere 2.5W of power.
-A _Bramble Box_ is a box containing individual nodes (in a _Rubus_ cluster the nodes are all _Raspberry Pi_s). Expected cost per _Drupelet_ is $100<sup><a href="#footer1">[1]</a></sup>.
+A _Bramble Box_ is a box containing individual nodes (in a _Rubus_ cluster the nodes are all _Raspberry Pi_ systems). Expected cost per _Drupelet_ is $100<sup><a href="#footer1">[1]</a></sup>.
 
 Estimated specifications for one _Bramble Box_ are as follows:
 
