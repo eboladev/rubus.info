@@ -22,8 +22,9 @@
 				<li class="{% if clean_title == 'contact_rubus' %}current{% endif %}"><a href="/contact/">Contact</a></li>
 			</ul>
 			<ul id="social">
-				<li><a href="https://plus.google.com/104823089512012142300/?prsrc=3"><img src="/images/32/gplus.png" width="16" height="16" alt="Google+"></a></li>
-				<li><a href="#"><img src="/images/16/twitter.png" width="16" height="16" alt="Twitter"></a></li>
+				<!-- Aren't I sneaky? If you don't have CSS enabled, it'll show you "google plus" and twitter" -->
+				<li class="gplus"><a href="https://plus.google.com/104823089512012142300/?prsrc=3">g<span class="hidden">oogle plus</span></a></li>
+				<li class="twitter"><a href="#">t<span class="hidden">witter</span></a></li>
 			</ul>
 		</nav>
 	</header>
