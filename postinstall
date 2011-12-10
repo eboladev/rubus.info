@@ -2,8 +2,8 @@
 
 # Yes, this is rather bad. Hopefully it works, though.
 RUBY_BIN=$(find /usr/local/rvm/rubies/ -name 'ruby-1.9.2-*')/bin
-RUBY=${RUBY_DIR}/ruby
-GEM=${RUBY_DIR}/gem
+RUBY=${RUBY_BIN}/ruby
+GEM=${RUBY_BIN}/gem
 
 $GEM install redcarpet    --version '=1.13.1'
 $GEM install liquid       --version '=2.2.2'
