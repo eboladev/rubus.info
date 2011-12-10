@@ -1,8 +1,4 @@
 #!/bin/bash
 
-# Why the hell do I have to do this?
-cd /home/dotcloud/code/
-bundle
-
 /home/dotcloud/code/render/render.rb
 
