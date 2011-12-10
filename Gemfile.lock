@@ -1,4 +1,5 @@
 GEM
+  remote: http://rubygems.org/
   specs:
     htmlentities (4.3.0)
     liquid (2.2.2)
