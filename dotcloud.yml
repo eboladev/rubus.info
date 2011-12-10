@@ -3,3 +3,5 @@ www:
     type: ruby
     environment:
         title: Rubus
+    config:
+        ruby-version: 1.9.2
