@@ -1,0 +1,13 @@
+GEM
+  specs:
+    htmlentities (4.3.0)
+    liquid (2.2.2)
+    redcarpet (1.17.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  htmlentities (= 4.3.0)
+  liquid (= 2.2.2)
+  redcarpet (= 1.17.2)
