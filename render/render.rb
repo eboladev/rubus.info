@@ -12,9 +12,15 @@ class Renderer
   def initialize
     config_file = File.join(File.dirname(__FILE__), '..', 'dotcloud.yml')
     config_file += '.dist' unless File.file?(config_file)
-    config   = YAML.parse(File.open(config_file)).to_ruby
-    @appname = config.keys[0]
-    @config  = config[@appname]
+    
+    config   = YAML.parse(File.open(config_file))
+    @appname = config.value.keys[0].value
+    
+    
+    # I guess this is 1.9.3-specific?
+    #config   = YAML.parse(File.open(config_file)).to_ruby
+    #@appname = config.keys[0]
+    #@config  = config[@appname]
 
     Liquid::Template.register_filter(TextFilter)
     @old_root = File.expand_path(File.join(File.dirname(__FILE__), '..', 'public'))
@@ -99,7 +105,10 @@ class Renderer
     breadcrumbs = BreadCrumbs.new(file)
     opts = {
             'breadcrumbs' => breadcrumbs,
-            'title'       => @config['environment']['title']
+            'title'       => @config['environment']['title'].value
+            
+            # I guess this is 1.9.3-specific?
+            #'title'       => @config['environment']['title']
            }
     content = parse_liquid(content, opts)
     
