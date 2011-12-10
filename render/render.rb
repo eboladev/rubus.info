@@ -20,7 +20,8 @@ class Renderer
     # I guess this is 1.9.3-specific?
     #config   = YAML.parse(File.open(config_file)).to_ruby
     #@appname = config.keys[0]
-    #@config  = config[@appname]
+    
+    @config  = config[@appname]
 
     Liquid::Template.register_filter(TextFilter)
     @old_root = File.expand_path(File.join(File.dirname(__FILE__), '..', 'public'))
