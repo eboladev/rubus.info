@@ -1,4 +1,7 @@
 #!/bin/bash
 
-/home/dotcloud/code/render/render.rb
+# Yes, this is rather bad. Hopefully it works, though.
+RUBY=$(find /usr/local/rvm/rubies/ -name 'ruby-1.9.2-*')/bin/ruby
+
+$RUBY /home/dotcloud/code/render/render.rb
 
